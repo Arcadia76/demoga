@@ -7,4 +7,5 @@ runs:
     - name: checkstyle
       id: checkstyle
       shell: bash
+      working-directory: java-app
       run: ./mvnw -B -ntp verify
