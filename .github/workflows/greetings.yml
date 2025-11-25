@@ -21,6 +21,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK! $contributor"
+        run: echo "$First_Name says this issue is created by ${{ github.event.issue.user.login }}"
         env:
-          First_Name: Mona
+          First_Name: Gilles
