@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+        "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<!--
+  Minimal Checkstyle configuration to allow maven-checkstyle-plugin 'check' goal to run.
+  This configuration is intentionally permissive and does not enforce strict rules.
+  You can tighten rules later by adding modules under TreeWalker or Checker.
+-->
+<module name="Checker">
+    <!-- Example: limit to Java files only (optional) -->
+    <property name="fileExtensions" value="java"/>
+
+    <!-- TreeWalker is the place where most checks live. No checks enabled by default here. -->
+    <module name="TreeWalker"/>
+</module>
