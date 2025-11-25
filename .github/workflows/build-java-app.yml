@@ -35,7 +35,7 @@ jobs:
         run: chmod +x mvnw
 
       - name: Build and test with Maven
-        run: ./mvnw -B -ntp verify
+        run: actions/checkstyle
 
       - name: Publish to GitHub Packages (Maven)
         if: github.event_name == 'push'

@@ -1,0 +1,10 @@
+name: checkstyle
+author: gdaram
+description: maven checkstyle
+runs:
+  using: composite
+  steps:
+    - name: checkstyle
+      id: checkstyle
+      shell: bash
+      run: ./mvnw -B -ntp verify
